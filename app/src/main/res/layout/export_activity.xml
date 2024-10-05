@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/export_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/green_btn_selector"
+        android:text="Export data"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/import_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_on"
+        android:text="Import Distributor data"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_file_picker_button"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_on"
+        android:text="import SMS data"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

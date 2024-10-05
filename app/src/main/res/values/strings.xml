@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Orange 8.2.13.1</string>
+    <string name="action_settings">Configuration</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tvTelephoneNumber">NUMERO DE TELEPHONE</string>
+    <string name="etTotal">TOTAL</string>
+    <string name="btnSend">Cash Out</string>
+    <string name="title_activity_configuration">Configuration des parametres</string>
+    <string name="tvNomDuMarchand">Numero Telephone du Distributeur</string>
+    <string name="tvNumeroDeTel">Numero de telephone</string>
+    <string name="tvCommissionThreshold">Commission Threshold</string>
+    <string name="tvAmountThresholdForUnattendedMode">Maximum autorisé en mode auto</string>
+    <string name="chbUnattendedMode">Mode Automatique</string>
+    <string name="tvCodeSecret">Code Secret Orange Money</string>
+    <string name="tvDelaiExpiration">Delai expiration</string>
+    <string name="tvChampLibre">Champ libre</string>
+    <string name="chbInclure">Inclure</string>
+    <string name="title_activity_journal">Journal des transactions</string>
+    <string name="title_activity_history">Historique</string>
+    <string name="title_activity_about_us">À propos de nous</string>
+    <string name="menuItmJournal">Journal</string>
+    <string name="menuItmhistory_french">Historique</string>
+    <string name="menuSubDist">Sous-distributeurs</string>
+    <string name="menuAddBalSD">Ajouter de l\'argent</string>
+    <string name="menuAddNewSD">Nouveau</string>
+    <string name="menuEditSD">Edit</string>
+    <string name="menuDeleteSD">Supprimer</string>
+    <string name="title_activity_histoire_by_year">L\'histoire par an</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_ttestact">Ttestact</string>
+    <string name="title_activity_histoire_monthly">Histoire Monthly</string>
+    <string name="lblDealerPhoneNumber">Revendeur Numéro de téléphone</string>
+    <string name="lblMyUniqueIDNumber">Mon numéro d\'identification unique</string>
+    <string name="lblCashOut">Cash Out</string>
+    <string name="btnCashIn">Cash In</string>
+    <string name="lblTVBalance">Balance</string>
+    <string name="lbTVZeroBalance">0.00</string>
+    <string name="lblTVSDName">Nom Sous-Distributeur</string>
+    <string name="lblTVMessageType">Message Type</string>
+    <string name="tvlblSDID">0000-0000-0000</string>
+    <string name="tvlblSDPhoneVal">000-000-000</string>
+    <string name="lblBtnAccept">Accepter</string>
+    <string name="lblBtnDecline">Rejeter</string>
+    <string name="lblBtnPrevious">Précédent</string>
+    <string name="lblBtnNext">Suivant</string>
+    <string name="lblTVTargetNumber">Target Number</string>
+    <string name="lblTVSubDistNumber">Numero Sous-Distributeur</string>
+    <string name="lblNoDataFound">Aucune donnée trouvée.</string>
+    <string name="strDeleteSDConfirmation">Supprimer Sous Distributeur de façon permanente?</string>
+    <string name="cancel">Annuler</string>
+    <string name="liste_de_requetes">Liste de requetes</string>
+    <string name="numero_du_client">Numero du Client</string>
+    <string name="balance">Solde</string>
+
+</resources>

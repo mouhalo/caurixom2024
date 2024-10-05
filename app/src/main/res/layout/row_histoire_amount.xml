@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvRowHistoireMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"       
+        android:text="Month"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+	<TextView
+	    android:id="@+id/tvRowHistoireTotalMonth"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:text="0.00" />
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/tvRowHistoireMonth"
+	    android:layout_marginBottom="5dp"
+	    android:background="#000000"  
+	    />
+
+</RelativeLayout>

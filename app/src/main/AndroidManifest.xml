@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="14"
+    android:versionName="8.2.13.1">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission-group android:name="android.permission-group.PHONE" />
+
+    <application
+        android:name="com.caurix.distributorauto.DistributorautoApp"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.caurix.distributorauto.Distributor"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.caurix.distributorauto.ConfigurationActivity"
+            android:label="@string/title_activity_configuration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.Journal"
+            android:label="@string/title_activity_journal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.GroupedJournal"
+            android:label="@string/title_activity_journal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.History"
+            android:label="@string/title_activity_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.AboutActivity"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.CodeSetupActivity"
+            android:label="Setup Codes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.HistoireByYear"
+            android:label="@string/title_activity_histoire_by_year"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.HistoireMonthly"
+            android:label="@string/title_activity_histoire_monthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.SubDistributor"
+            android:label="Sous-distributeurs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.AddSDActivity"
+            android:label="Ajouter / Changer Sous-distributeur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.caurix.distributorauto.Export_Activity"
+            android:label="Import/Export Database"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.caurix.distributorauto.InSMSReceiverDistributor"
+            android:enabled="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_SENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.caurix.distributorauto.DialCommissionUSSD"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.caurix.distributorauto.UpdateBalanceService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name="com.caurix.duplicate.helper.AlarmReceiver" />
+        <receiver android:name="com.caurix.duplicate.helper.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.caurix.distributorauto.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.caurix.distributorauto.USSDService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="Orange Money"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/serviceconfig" />
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutPart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sd_list_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/colSDName"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text="Nom Du Person"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/colBalance"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/colSDName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/colMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/colBalance"
+        android:layout_alignBottom="@+id/colBalance"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:text="000000"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

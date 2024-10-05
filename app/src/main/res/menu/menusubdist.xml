@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itmAddNew"
+        android:icon="@drawable/autocontact_icon"
+        android:showAsAction="always"
+        android:title="@string/menuAddNewSD">
+    </item>
+    <item
+        android:id="@+id/itmEdit"
+        android:enabled="false"
+        android:icon="@drawable/edit_contact_selector"
+        android:showAsAction="always"
+        android:title="@string/menuEditSD">
+    </item>
+    <item
+        android:id="@+id/itmDelete"
+        android:enabled="false"
+        android:icon="@drawable/delete_contact_selector"
+        android:showAsAction="always"
+        android:title="@string/menuDeleteSD">
+    </item>
+    <!--
+    <item
+        android:id="@+id/itmAddBalance"
+        android:icon="@android:drawable/ic_input_add"
+        android:showAsAction="always"
+        android:title="@string/menuAddBalSD">
+    </item>
+    -->
+
+</menu>

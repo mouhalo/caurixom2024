@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+    >
+
+        <TextView
+            android:id="@+id/headerSDName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/headerSDBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solde Actuel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/headerSDPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            />	
+</RelativeLayout>

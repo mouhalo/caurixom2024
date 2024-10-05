@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.caurix.distributorauto.ConfigurationActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvCodeSecret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvCodeSecret" />
+
+            <EditText
+                android:id="@+id/etCodeSecret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+           <!--  
+           <TextView
+                android:id="@+id/tvNomDuMarchand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNomDuMarchand" />
+
+            <EditText
+                android:id="@+id/etNomDuMarchand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" /> 
+
+            <CheckBox
+                android:id="@+id/chbNomDuMarchand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chbInclure" />
+-->
+            <TextView
+                android:id="@+id/tvNumeroDeTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvNumeroDeTel" />
+
+            <EditText
+                android:id="@+id/etNumeroDeTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+ <!-- 
+            <CheckBox
+                android:id="@+id/chbNumeroDeTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chbInclure" />
+
+            <TextView
+                android:id="@+id/lbl_commision_threshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvCommissionThreshold" />
+
+            <EditText
+                android:id="@+id/txt_commision_threshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />-->
+
+            <TextView
+                android:id="@+id/lbl_amount_threshold_for_unattended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvAmountThresholdForUnattendedMode" />
+
+            <EditText
+                android:id="@+id/txt_amount_threshold_for_unattended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/chbUnattendedMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chbUnattendedMode" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

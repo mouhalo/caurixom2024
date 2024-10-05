@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.caurix.distributorauto.Distributor" >
+
+    <LinearLayout
+        android:id="@+id/unattendedModeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Automatique: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" android:layout_weight="1"/>
+        
+        <TextView
+            android:id="@+id/txtunattended_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSMSType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/unattendedModeContainer"
+        android:layout_marginTop="14dp"
+        android:text="@string/lblTVMessageType"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvSMSAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSMSType"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/lbTVZeroBalance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvTargetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSMSType"
+        android:layout_below="@+id/tvSMSType"
+        android:layout_marginTop="17dp"
+        android:text="@string/numero_du_client"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTargetNumber"
+        android:layout_below="@+id/tvTargetNumber"
+        android:layout_marginTop="17dp"
+        android:text="@string/balance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvAmtBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBalance"
+        android:layout_alignBottom="@+id/tvBalance"
+        android:layout_alignRight="@+id/tvSMSAmount"
+        android:text="@string/lbTVZeroBalance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSDPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvAmtBalance"
+        android:layout_below="@+id/tvBalance"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/tvTargetNumber"
+        android:gravity="right"
+        android:text="@string/tvlblSDPhoneVal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnDecline"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnAccept"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_on"
+        android:text="@string/lblBtnDecline"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPrevRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDecline"
+        android:layout_below="@+id/btnDecline"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/ic_media_previous" />
+
+    <Button
+        android:id="@+id/btnNextRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPrevRec"
+        android:layout_alignBottom="@+id/btnPrevRec"
+        android:layout_alignRight="@+id/btnDecline"
+        android:background="@android:drawable/ic_media_next" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/btnDecline"
+        android:layout_below="@+id/tvSDPhone"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/green_btn_selector"
+        android:text="@string/lblBtnAccept"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSDNameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSDPhone"
+        android:layout_marginTop="13dp"
+        android:text="@string/lblTVSDName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvSDPhone"
+        android:layout_below="@+id/tvSDPhone"
+        android:layout_marginTop="13dp"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvValNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTargetNumber"
+        android:layout_alignRight="@+id/tvSMSAmount"
+        android:text="00000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvLblSDPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAccept"
+        android:layout_alignParentLeft="true"
+        android:text="@string/lblTVSubDistNumber"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

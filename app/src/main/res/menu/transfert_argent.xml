@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itmSubDistributor"
+        android:title="@string/menuSubDist"></item>
+    <item
+        android:id="@+id/itmJournal"
+        android:title="@string/menuItmJournal"></item>
+    <item
+        android:id="@+id/itmHistory"
+        android:title="@string/menuItmhistory_french"></item>
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/itmExport"
+        android:title="Export/Import Database" />
+    <item
+        android:id="@+id/itmAboutUs"
+        android:title="@string/title_activity_about_us" />
+    <item
+        android:id="@+id/itemSetCodesInFiles"
+        android:title="Setup codes" />
+
+
+</menu>
